@@ -1,0 +1,39 @@
+git commit —amend
+
+git log
+git log --pretty=oneline
+
+git remote //查看远程仓库
+git remote -v //详细查看远程仓库
+git remote add <shortname> <url>  //添加远程仓库
+git remote rename pb paul  //重命名仓库名字 pb, paul is example name 
+git remote rm paul  //删除远程仓库
+
+
+git fetch [remotename]  //can’t merge
+git pull [remotename]  //auto merge
+
+git push origin master
+
+git tag //显示所有标签
+git tag v1.0 //lightweight tag
+git tag -a v1.1 -m ‘my version 1.1’  //annotated tag
+git tag show v1.1 //显示标签对应的提交信息
+git tag v1.2 0ce029  //为某一次提交补标签
+git push origin v1.0 //推送标签到远端
+git push origin —-tags //推送所有标签
+
+git branch //查看分枝
+git branch test //创建分枝
+git checkout test //切换分枝
+git branch -d hotfix //删除分枝
+
+git push origin serverfix //推送分枝
+
+git remote add <name> <https://xxx/xxx>  //添加远程仓库
+git fetch teamone/master //拉取远程仓库
+git push origin serverfix //推送／共享分支
+
+
+
+
